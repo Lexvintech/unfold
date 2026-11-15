@@ -1,11 +1,12 @@
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import beaverLogo from '../assets/Beaver.svg'
 
 export interface NavbarProps {
   companyName?: string
 }
 
-export function Navbar({ companyName = 'Hearth & Field' }: NavbarProps) {
+export function Navbar({ companyName = 'BEAVERS PROPERTY LTD' }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const links = [
     { label: 'About', href: '#about' },
@@ -19,8 +20,7 @@ export function Navbar({ companyName = 'Hearth & Field' }: NavbarProps) {
     <header className="site-header">
       <div className="nav-shell">
         <a className="brand" href="#home" aria-label={`${companyName} home`}>
-          <span className="brand-symbol" aria-hidden="true"><span /></span>
-          <span className="brand-name">{companyName}<small>PROPERTY PARTNERS</small></span>
+          <img className="brand-logo" src={beaverLogo} alt={companyName} />
         </a>
         <button
           className="menu-toggle"

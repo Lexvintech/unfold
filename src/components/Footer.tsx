@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
+import beaverLogo from '../assets/Beaver.svg'
 
 export interface FooterProps {
   companyName?: string
@@ -8,8 +9,8 @@ export interface FooterProps {
 }
 
 export function Footer({
-  companyName = '[Insert full registered company name] Ltd',
-  registrationNumber = '[Insert 8-digit Companies House number]',
+  companyName = 'BEAVERS PROPERTY LTD',
+  registrationNumber = '15451127',
   registeredOffice = '[Insert official registered office address]',
   registrationRegion = 'England & Wales',
 }: FooterProps) {
@@ -17,9 +18,8 @@ export function Footer({
     <footer className="site-footer" id="company-info">
       <div className="page-container">
         <div className="footer-top">
-          <a className="brand footer-brand" href="#home" aria-label="Hearth and Field home">
-            <span className="brand-symbol" aria-hidden="true"><span /></span>
-            <span className="brand-name">Hearth & Field<small>PROPERTY PARTNERS</small></span>
+          <a className="brand footer-brand" href="#home" aria-label={`${companyName} home`}>
+            <img className="brand-logo" src={beaverLogo} alt={companyName} />
           </a>
           <p>Property with purpose.<br /><em>Partnership built on trust.</em></p>
           <a className="footer-top-link" href="#home">Back to top <ArrowUpRight size={15} /></a>
@@ -35,7 +35,7 @@ export function Footer({
           </dl>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Hearth & Field Property Partners. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} {companyName}. All rights reserved.</span>
           <span>All property information is illustrative and subject to verification.</span>
           <a href="#contact">Privacy & enquiries</a>
         </div>
