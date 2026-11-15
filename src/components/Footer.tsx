@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-import beaverLogo from '../assets/Beaver.svg'
+import footerIcon from '../assets/footerIcon.png'
 
 export interface FooterProps {
   companyName?: string
@@ -19,7 +19,7 @@ export function Footer({
       <div className="page-container">
         <div className="footer-top">
           <a className="brand footer-brand" href="#home" aria-label={`${companyName} home`}>
-            <img className="brand-logo" src={beaverLogo} alt={companyName} />
+            <img className="brand-logo" src={footerIcon} alt={companyName} />
           </a>
           <p>Property with purpose.<br /><em>Partnership built on trust.</em></p>
           <a className="footer-top-link" href="#home">Back to top <ArrowUpRight size={15} /></a>

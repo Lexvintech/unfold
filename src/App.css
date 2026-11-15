@@ -178,7 +178,6 @@ button { font: inherit; }
 
 .site-footer { color: #cbd5e1; background: #0a1020; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; min-height: 142px; }
-.footer-brand .brand-logo { box-sizing: content-box; padding: 5px 8px; background: var(--white); }
 .footer-top > p { margin: 0; color: var(--white); font-family: var(--serif); font-size: 16px; line-height: 1.5; text-align: center; }
 .footer-top > p em { color: #eab755; font-weight: 400; }
 .footer-top-link { display: inline-flex; justify-self: end; align-items: center; gap: 9px; color: #cbd5e1; font-size: 9px; text-decoration: none; }
