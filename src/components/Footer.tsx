@@ -11,7 +11,7 @@ export interface FooterProps {
 export function Footer({
   companyName = 'BEAVERS PROPERTY LTD',
   registrationNumber = '15451127',
-  registeredOffice = '[Insert official registered office address]',
+  registeredOffice = '218 Rodway Road, Reading, RG30 6EE',
   registrationRegion = 'England & Wales',
 }: FooterProps) {
   return (
