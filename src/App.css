@@ -62,9 +62,6 @@ button { font: inherit; }
 .hero-proof small { margin-top: 5px; color: rgba(226,232,240,.68); font-size: 9px; }
 .hero-index { position: absolute; right: 0; bottom: 34px; display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.6); font-size: 9px; letter-spacing: .1em; }
 .hero-index i { width: 25px; height: 1px; background: var(--gold); }
-@media (min-width: 1101px) {
-  .hero-image { background-color: var(--navy); background-position: right center; background-size: auto 100%; }
-}
 @keyframes hero-reveal { from { opacity: .2; } to { opacity: 1; } }
 
 .about-section { background: var(--white); }
