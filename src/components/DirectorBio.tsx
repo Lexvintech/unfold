@@ -1,5 +1,6 @@
 import { ArrowUpRight, MoveUpRight } from 'lucide-react'
 import propertyPurpose from '../assets/property-purpose.jpg'
+import propertyAfterFront from '../assets/after2.jpeg'
 
 export interface DirectorBioProps {
   directorName?: string
@@ -14,12 +15,14 @@ export function DirectorBio({
     <section className="about-section section-pad" id="about">
       <div className="page-container about-grid">
         <div className="about-visual">
-          <img
-            src={propertyPurpose}
-            alt="Property exterior showing the wall before refurbishment"
-          />
-          <div className="image-caption"><span>BEFORE REFURBISHMENT</span><span>Respect the potential.</span></div>
-          <div className="about-stamp"><span>PROPERTY<br />WITH PURPOSE</span><i /></div>
+          <figure>
+            <img src={propertyPurpose} alt="Property exterior before refurbishment" />
+            <figcaption>Before refurbishment</figcaption>
+          </figure>
+          <figure>
+            <img src={propertyAfterFront} alt="Property exterior after refurbishment" />
+            <figcaption>After refurbishment</figcaption>
+          </figure>
         </div>
         <div className="about-copy">
           <p className="eyebrow"><span />Who we are</p>
