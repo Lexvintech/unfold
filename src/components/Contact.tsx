@@ -9,7 +9,7 @@ export interface ContactProps {
 }
 
 export function Contact({
-  email = 'acquisitions@example.co.uk',
+  email = 'info@beavers.co.uk',
   phone = '+44 (0) 1632 960 000',
   officeAddress = '218 Rodway Road, Reading, RG30 6EE',
 }: ContactProps) {
@@ -49,7 +49,7 @@ export function Contact({
             <a href={`tel:${phone.replace(/[^\d+]/g, '')}`}><span className="contact-icon"><Phone size={17} /></span><span><small>Call our team</small><b>{phone}</b></span><ArrowUpRight size={15} /></a>
             <div><span className="contact-icon"><MapPin size={17} /></span><span><small>Office</small><b>{officeAddress}</b></span></div>
           </div>
-          <p className="contact-note">Email and phone details shown are placeholders. Please replace them with verified company information before publishing.</p>
+          <p className="contact-note">The phone number shown is a placeholder. Please replace it with verified company information before publishing.</p>
         </div>
         <div className="contact-form-panel">
           <div className="form-heading"><span>PROPERTY ENQUIRY</span><span>01 — 06</span></div>
