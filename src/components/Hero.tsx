@@ -14,7 +14,7 @@ export function Hero({ eyebrow = 'A considered approach to property' }: HeroProp
           <p className="eyebrow eyebrow-light"><span />{eyebrow}</p>
           <h1>Good property.<br /><em>Thoughtfully</em><br />reimagined.</h1>
           <p className="hero-intro">
-            Direct property acquisitions and long-term ownership. We bring clarity, care and committed capital to every transaction.
+            Direct property acquisition and long-term ownership. We bring clarity, care and committed capital to every transaction.
           </p>
           <div className="hero-actions">
             <a className="button button-gold" href="#criteria">Our investment criteria <ArrowRight size={16} /></a>
