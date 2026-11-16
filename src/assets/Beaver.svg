@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
   <defs>
+    <linearGradient id="gold-shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5c2"/>
+      <stop offset="18%" stop-color="#ffd24a"/>
+      <stop offset="40%" stop-color="#d99100"/>
+      <stop offset="52%" stop-color="#fff4b8"/>
+      <stop offset="68%" stop-color="#e7a500"/>
+      <stop offset="100%" stop-color="#ffc62f"/>
+    </linearGradient>
     <style>
       .cls-1 {
         font-size: 76.08px;
@@ -16,7 +24,7 @@
       }
 
       .cls-10, .cls-6 {
-        fill: #ffb800;
+        fill: url(#gold-shine);
       }
 
       .cls-2 {

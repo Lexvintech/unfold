@@ -4,7 +4,7 @@ export interface HeroProps {
   eyebrow?: string
 }
 
-export function Hero({ eyebrow = 'A considered approach to property' }: HeroProps) {
+export function Hero({ eyebrow = 'The home of all property types' }: HeroProps) {
   return (
     <section className="hero" id="home">
       <div className="hero-image" aria-hidden="true" />
@@ -12,9 +12,9 @@ export function Hero({ eyebrow = 'A considered approach to property' }: HeroProp
       <div className="hero-content page-container">
         <div className="hero-copy">
           <p className="eyebrow eyebrow-light"><span />{eyebrow}</p>
-          <h1>Good property.<br /><em>Thoughtfully</em><br />reimagined.</h1>
+          <h1>Smarty Properties,<br /><em>Re-engineered</em><br />from the Ground Up.</h1>
           <p className="hero-intro">
-            Direct property acquisition and long-term ownership. We bring clarity, care and committed capital to every transaction.
+            Direct property acquisition and long-term ownership. We bring clarity, care and committed capital to every transaction, with swift conveyancing and reliable specialist funding to unlock value for every stakeholder.
           </p>
           <div className="hero-actions">
             <a className="button button-gold" href="#criteria">Our investment criteria <ArrowRight size={16} /></a>
