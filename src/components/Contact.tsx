@@ -68,7 +68,7 @@ export function Contact({
             <label>Property condition
               <select name="condition" defaultValue="" required>
                 <option value="" disabled>Select the closest match</option>
-                <option>Requires modernisation</option>
+                <option>Requires modernization</option>
                 <option>Major refurbishment required</option>
                 <option>Probate or inherited property</option>
                 <option>Commercial or mixed-use</option>

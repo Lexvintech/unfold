@@ -4,7 +4,7 @@ export interface HeroProps {
   eyebrow?: string
 }
 
-export function Hero({ eyebrow = 'The home of all property types' }: HeroProps) {
+export function Hero({ eyebrow = 'The Home of All Property Types' }: HeroProps) {
   return (
     <section className="hero" id="home">
       <div className="hero-image" aria-hidden="true" />
@@ -12,9 +12,9 @@ export function Hero({ eyebrow = 'The home of all property types' }: HeroProps) 
       <div className="hero-content page-container">
         <div className="hero-copy">
           <p className="eyebrow eyebrow-light"><span />{eyebrow}</p>
-          <h1>Smarty Properties,<br /><em>Re-engineered</em><br />from the Ground Up.</h1>
+          <h1>Smarty Properties.<br /><em>Re-engineered</em><br />from the Ground Up.</h1>
           <p className="hero-intro">
-            Direct property acquisition and long-term ownership. We bring clarity, care and committed capital to every transaction, with swift conveyancing and reliable specialist funding to unlock value for every stakeholder.
+             You can count on us for swift property conveyancing processes. We close deals backed by reliable investors and specialty lenders combined. Bringing Unparalleled value creation to all stakeholders
           </p>
           <div className="hero-actions">
             <a className="button button-gold" href="#criteria">Our investment criteria <ArrowRight size={16} /></a>

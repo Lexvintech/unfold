@@ -12,7 +12,7 @@ export function Footer({
   companyName = 'BEAVERS PROPERTY LTD',
   registrationNumber = '15451127',
   registeredOffice = '218 Rodway Road, Reading, RG30 6EE',
-  registrationRegion = 'England & Wales',
+  registrationRegion = 'England',
 }: FooterProps) {
   return (
     <footer className="site-footer" id="company-info">
