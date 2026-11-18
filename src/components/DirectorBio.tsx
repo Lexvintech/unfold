@@ -8,8 +8,8 @@ export interface DirectorBioProps {
 }
 
 export function DirectorBio({
-  directorName = 'Your name here',
-  role = 'Founder & Managing Director',
+  directorName = 'Benson A. Meli',
+  role = 'Managing Director',
 }: DirectorBioProps) {
   return (
     <section className="about-section section-pad" id="about">
