@@ -16,7 +16,7 @@ const proofPoints = [
 
 const step = (i: number) => ({ '--i': i }) as CSSProperties
 
-export function Hero({ eyebrow = 'The home of all property types' }: HeroProps) {
+export function Hero({ eyebrow = 'The Home of All Property Types' }: HeroProps) {
   return (
     <section className="hero" id="home" aria-labelledby="hero-title">
       <div className="hero-bg" aria-hidden="true">
@@ -37,12 +37,12 @@ export function Hero({ eyebrow = 'The home of all property types' }: HeroProps) 
         <div className="hero-copy">
           <p className="eyebrow eyebrow-light hero-in" style={step(0)}><span />{eyebrow}</p>
           <h1 id="hero-title" className="hero-title">
-            <span className="hero-line"><span style={step(1)}>Smarty Properties,</span></span>
+            <span className="hero-line"><span style={step(1)}>Smarty Properties.</span></span>
             <span className="hero-line"><span style={step(2)}><em>Re-engineered</em></span></span>
             <span className="hero-line"><span style={step(3)}>from the Ground Up.</span></span>
           </h1>
           <p className="hero-intro hero-in" style={step(5)}>
-            You can count on us for swift property conveyancing processes. We close deals backed by reliable investors and specialty lenders combined, bringing unparalleled value creation to all stakeholders.
+            You can count on us for swift property conveyancing processes. We close deals backed by reliable investors and specialty lenders combined. Bringing unparalleled value creation to all stakeholders.
           </p>
           <div className="hero-actions hero-in" style={step(6)}>
             <MagneticLink className="button button-gold" href="#contact">

@@ -8,7 +8,7 @@ export const company = {
   websiteLabel: 'www.beavers.co.uk',
   office: '218 Rodway Road, Reading, RG30 6EE',
   registrationNumber: '15451127',
-  registrationRegion: 'England & Wales',
+  registrationRegion: 'England',
   director: {
     name: 'Benson A. Meli',
     role: 'Managing Director',

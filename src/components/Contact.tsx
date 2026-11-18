@@ -161,7 +161,7 @@ export function Contact({
                 <label className="field"><span className="field-label">Property condition</span>
                   <select {...fieldProps('condition')} defaultValue="">
                     <option value="" disabled>Select the closest match</option>
-                    <option>Requires modernisation</option>
+                    <option>Requires modernization</option>
                     <option>Major refurbishment required</option>
                     <option>Probate or inherited property</option>
                     <option>Commercial or mixed-use</option>
