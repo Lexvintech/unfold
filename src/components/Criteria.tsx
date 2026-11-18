@@ -1,4 +1,5 @@
-import { ArrowUpRight, Building2, KeyRound, Leaf, Wrench } from 'lucide-react'
+import { ArrowUpRight, Building2, KeyRound, Users, Wrench } from 'lucide-react'
+import { delay, trackSpotlight } from '../lib/motion'
 
 export interface CriteriaProps {
   region?: string
@@ -8,61 +9,73 @@ const opportunities = [
   {
     number: '01',
     icon: Wrench,
-    title: 'Homes ready for a new chapter',
-    description: 'Unmodernised, dated or distressed residential property where careful refurbishment can unlock its next life.',
+    title: 'Distressed properties',
+    description: 'Dated, unmodernised or damaged homes, including properties that need significant work.',
     tags: ['Refurbishment', 'Value-add'],
   },
   {
     number: '02',
     icon: KeyRound,
-    title: 'Probate & inherited property',
+    title: 'Probate properties',
     description: 'A straightforward, respectful route for executors and families seeking a clear sale process and dependable communication.',
     tags: ['Sensitive sales', 'Direct purchase'],
   },
   {
     number: '03',
-    icon: Building2,
-    title: 'Commercial & mixed-use assets',
-    description: 'Selected commercial properties with potential for adaptive reuse, including appropriate residential conversion opportunities.',
-    tags: ['Change of use', 'Selective'],
+    icon: Users,
+    title: 'Homes with problem tenants',
+    description: 'We consider tenanted properties and complex occupancy situations, including HMOs.',
+    tags: ['Tenanted', 'HMO'],
   },
   {
     number: '04',
-    icon: Leaf,
-    title: 'Houses in multiple occupation',
-    description: 'Existing HMOs and properties with potential to provide well-considered, modern shared accommodation.',
-    tags: ['HMO', 'Long-term hold'],
+    icon: Building2,
+    title: 'Undesirable properties & more',
+    description: 'Unusual, vacant, commercial and mixed-use properties are welcome. We consider every property on its merits.',
+    tags: ['Any condition', 'All property types'],
   },
 ]
 
-export function Criteria({ region = 'Our target regions' }: CriteriaProps) {
+export function Criteria({ region = 'Any home, any age, any condition' }: CriteriaProps) {
   return (
-    <section className="criteria-section section-pad" id="criteria">
+    <section className="criteria-section section-pad" id="criteria" aria-labelledby="criteria-title">
       <div className="page-container">
         <div className="section-heading heading-split">
           <div>
-            <p className="eyebrow eyebrow-light"><span />Acquisition criteria</p>
-            <h2>We look for potential.<br /><em>Not perfection.</em></h2>
+            <p className="eyebrow eyebrow-light" data-reveal><span />Acquisition criteria</p>
+            <h2 id="criteria-title" className="section-title" data-reveal style={delay(1)}>
+              We look for potential.<br /><em>Not perfection.</em>
+            </h2>
           </div>
-          <div className="heading-aside">
+          <div className="heading-aside" data-reveal style={delay(2)}>
             <p>From a single home to a complex opportunity, we consider each property on its own merits and respond with clarity.</p>
-            <span className="region-note">{region} <i>— Update with your coverage area</i></span>
+            <span className="region-note">{region}</span>
           </div>
         </div>
-        <div className="criteria-grid">
-          {opportunities.map(({ number, icon: Icon, title, description, tags }) => (
-            <article className="criteria-card" key={number}>
-              <div className="criteria-card-top"><span className="card-number">{number}</span><Icon size={22} strokeWidth={1.45} /></div>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <div className="tag-row">{tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-              <a href="#contact" aria-label={`Discuss ${title}`}><ArrowUpRight size={17} /></a>
-            </article>
+
+        <ul className="criteria-grid">
+          {opportunities.map(({ number, icon: Icon, title, description, tags }, i) => (
+            <li key={number} className="criteria-item" data-reveal style={delay(i + 1)}>
+              <article className="criteria-card" onPointerMove={trackSpotlight}>
+                <div className="criteria-card-top">
+                  <span className="criteria-icon"><Icon size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className="card-number">{number}</span>
+                </div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <div className="tag-row">{tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                <a className="card-link" href="#contact">
+                  Discuss a property <ArrowUpRight size={16} aria-hidden="true" />
+                  <span className="visually-hidden">: {title}</span>
+                </a>
+              </article>
+            </li>
           ))}
-        </div>
-        <div className="criteria-bottom">
+        </ul>
+
+        <div className="criteria-bottom" data-reveal>
           <span>Have a property in mind?</span>
-          <a className="text-link text-link-light" href="#contact">Tell us about it <ArrowUpRight size={15} /></a>
+          <a className="text-link text-link-light" href="#contact">Tell us about it <ArrowUpRight size={17} aria-hidden="true" /></a>
         </div>
       </div>
     </section>

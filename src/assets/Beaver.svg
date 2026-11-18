@@ -1,63 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-label="Beavers Property Ltd">
   <defs>
-    <linearGradient id="gold-shine" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fff5c2"/>
-      <stop offset="18%" stop-color="#ffd24a"/>
-      <stop offset="40%" stop-color="#d99100"/>
-      <stop offset="52%" stop-color="#fff4b8"/>
-      <stop offset="68%" stop-color="#e7a500"/>
-      <stop offset="100%" stop-color="#ffc62f"/>
+    <!-- Site gold, top-lit; no near-white stops so it holds up on light backgrounds. -->
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d27a"/>
+      <stop offset="45%" stop-color="#e8ab3c"/>
+      <stop offset="100%" stop-color="#c58a1c"/>
     </linearGradient>
+    <!-- Deeper gold for the small "PROPERTY LTD" line so it stays legible. -->
+    <linearGradient id="gold-text" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0b84a"/>
+      <stop offset="55%" stop-color="#d69a26"/>
+      <stop offset="100%" stop-color="#b57d12"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff8dc" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="sub-clip">
+      <text class="sub" x="510" y="214" textLength="414" lengthAdjust="spacing">PROPERTY LTD</text>
+    </clipPath>
     <style>
-      .cls-1 {
-        font-size: 76.08px;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
-        font-family: News706BT-BoldC, 'News706 BT';
-        font-weight: 700;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7, .cls-8, .cls-9 {
-        fill: #0a2472;
-      }
-
-      .cls-10, .cls-6 {
-        fill: url(#gold-shine);
-      }
-
-      .cls-2 {
-        font-size: 76.33px;
-      }
-
-      .cls-3 {
-        font-size: 84.94px;
-      }
-
-      .cls-4 {
-        font-size: 78.44px;
-      }
-
-      .cls-5 {
-        font-size: 75.08px;
-      }
-
-      .cls-6 {
-        font-size: 37.75px;
-      }
-
-      .cls-11 {
-        fill: #f8fbfe;
-      }
-
-      .cls-7 {
-        font-size: 76.58px;
-      }
-
-      .cls-8 {
-        font-size: 79.13px;
-      }
+      .word, .sub { font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 700; }
+      .word { font-size: 84px; fill: #0b1430; }
+      .sub { font-size: 50px; }
+      .cls-1, .cls-9 { fill: #0b1430; }
+      .cls-10 { fill: url(#gold); }
+      .cls-11 { fill: #f8fbfe; }
+      .sub-fill { fill: url(#gold-text); stroke: #8a5e0c; stroke-width: 1.2px; paint-order: stroke; }
+      .shine { animation: sweep 5.5s cubic-bezier(.65, 0, .35, 1) 1.2s infinite; transform: translateX(-160px); }
+      @keyframes sweep { 0% { transform: translateX(-160px); } 45%, 100% { transform: translateX(520px); } }
+      @media (prefers-reduced-motion: reduce) { .shine { animation: none; opacity: 0; } }
     </style>
   </defs>
   <path class="cls-9" d="M256.71,16.48h109.06c10.78,0,21.52,1.3,31.95,3.99,21.1,5.43,50.11,17.83,53.6,45.26,5.56,43.69-24.62,62.75-61.96,69.9,0,0,78.44,11.43,92.14,47.66,11.12,29.39,9.53,58.78-25.42,85l-59.58-40.51s18.9-31.94-8.74-59.58c-23.04-23.04-88.17-23.83-114.39-22.24v-15.89h39.06c2.25,0,5.25-.2,7.84-.62,11.78-1.91,42.12-9.33,54.78-35.92,15.89-33.36-19.86-50.84-19.86-50.84,0,0-22.24-15.09-81.82-8.74,0,0-1.59-7.94-16.68-17.48Z"/>
@@ -77,26 +51,9 @@
   <polygon class="cls-10" points="219.38 155.41 219.38 171.72 237.65 182.5 240.03 182.29 240.03 168.16 219.38 155.41"/>
   <path class="cls-10" d="M33.5,285.77s46.07-10.33,83.41-32.57c37.33-22.24,177.93-90.56,186.67-87.38,14.03,5.1,148.74,117.56,175.25,120.74l-19.56-.79s-124.71-72.29-165.23-96.12l-134.25,72.29s-104.85,38.92-126.3,23.83Z"/>
   <path class="cls-10" d="M403.67,263.52s41.31,19.86,42.89,19.06v1.59l-104.85.79v-2.17s36.54-3.39,41.31-4.98,19.86-10.33,20.65-14.3Z"/>
-  <g id="Beavers">
-    <text class="cls-3" transform="translate(508.01 146.64)"><tspan x="0" y="0">B</tspan></text>
-    <text class="cls-1" transform="translate(638.35 143.89) scale(1.12 1)"><tspan x="0" y="0">A</tspan></text>
-    <text class="cls-7" transform="translate(689.66 144.32) scale(1.22 1)"><tspan x="0" y="0">V</tspan></text>
-    <text class="cls-5" transform="translate(575.28 144.67) scale(.94 1)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-8" transform="translate(756.09 146.66) scale(.95 1)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-2" transform="translate(814.12 144.66) scale(1.04 1)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-4" transform="translate(877.2 146.07) scale(1.06 1)"><tspan x="0" y="0">S</tspan></text>
-  </g>
-  <g id="Property">
-    <text class="cls-6" transform="translate(518.25 206.22)"><tspan x="0" y="0">P</tspan></text>
-    <text class="cls-6" transform="translate(549.18 206.75)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-6" transform="translate(586.93 207.27)"><tspan x="0" y="0">O</tspan></text>
-    <text class="cls-6" transform="translate(624.15 206.75)"><tspan x="0" y="0">P</tspan></text>
-    <text class="cls-6" transform="translate(659.8 206.22)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-6" transform="translate(695.97 207.27)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-6" transform="translate(732.15 207.27)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-6" transform="translate(860.6 206.75)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-6" transform="translate(895.2 207.27)"><tspan x="0" y="0">D</tspan></text>
-    <text class="cls-6" transform="translate(770.42 206.75)"><tspan x="0" y="0">Y</tspan></text>
-    <text class="cls-6" transform="translate(830.29 206.16)"><tspan x="0" y="0">L</tspan></text>
+  <text class="word" x="506" y="142" textLength="418" lengthAdjust="spacing">BEAVERS</text>
+  <text class="sub sub-fill" x="510" y="214" textLength="414" lengthAdjust="spacing">PROPERTY LTD</text>
+  <g clip-path="url(#sub-clip)">
+    <rect class="shine" x="440" y="160" width="120" height="70" fill="url(#shine)"/>
   </g>
 </svg>
